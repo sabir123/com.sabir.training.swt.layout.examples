@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.sabir.training.swt.layout.examples.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.sabir.training.swt.layout.examples.Perspective"
+            name="RCP Perspective"
+            id="com.sabir.training.swt.layout.examples.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.sabir.training.swt.layout.examples.CompositeView"
+            id="com.sabir.training.swt.layout.examples.compositeview"
+            name="CompositeView"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
